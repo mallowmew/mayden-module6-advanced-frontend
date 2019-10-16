@@ -1,0 +1,107 @@
+$hand-color: #ffffff;
+$hour-hand-color: $hand-color;
+$minute-hand-color: $hand-color;
+$second-hand-color: #ff0000;
+$line-color: #dedede;
+$date-backkground: #dedede;
+$page-background: #171412;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $page-background;
+}
+
+.clock-container {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 600px;
+}
+  
+svg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#over {
+  z-index: 10;
+}
+
+line {
+  stroke: $line-color;
+  stroke-width: 2px;
+  transform-origin: center;
+}
+
+#hours {
+  stroke: $hour-hand-color;
+  stroke-width: 6px;
+  transition: transform 96ms;
+}
+
+#minutes {
+  stroke: $minute-hand-color;
+  stroke-width: 4px;
+  transition: transform 96ms;
+}
+
+#seconds {
+  stroke: $second-hand-color;
+  transition: transform 96ms ease-in;
+}
+
+#nub {
+  fill: $second-hand-color;
+}
+
+.line {
+  stroke-width: 2px;
+}
+
+.minute {
+  stroke-width: 1px;
+}
+
+.quarter {
+  stroke-width: 4px;
+}
+
+@for $i from 1 through 59 {
+  .line#{$i} {
+    transform: rotate(6deg * $i)
+  }
+}
+
+#date {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $date-backkground;
+  padding: 6px 12px;
+  min-width: 160px;
+  //z-index: -1;
+  text-align: center;
+  color: $page-background;
+
+  span {
+    margin: 0 auto;
+    font-size: 2.6rem;
+  }
+
+  .year::after, .month::after {
+    content: ":";
+    margin: 0 0.1em;
+  }
+}

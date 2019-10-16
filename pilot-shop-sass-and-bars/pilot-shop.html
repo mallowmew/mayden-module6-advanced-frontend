@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pilot Shop Exercise</title>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="../js/handlebars-v4.1.2.js" defer></script>
+  <script src="pilot-shop.js" defer></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="content-area">
+      <div class="header-phone-number">
+        <a href="">+800-2345-6789</a>
+      </div>
+      <div class="header-search">
+        <form class="search-form">
+          <input id="search-field" type="search" placeholder="search store">
+          <button id="search-submit" type="submit"><img src="images/Screenshot 2019-07-08 at 09.47.31.png"></button>
+        </form>
+      </div>
+      <div class="header-cart">
+        <button id="cart-button">Cart 0</button>
+      </div>
+      <div class="header-currency">
+        <select>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div class="header-user">
+        <div class="header-user-button">My Account</div>
+        <div class="header-user-button">Wishlist</div>
+        <div class="header-user-button">Checkout</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-sticky">
+    <div class="content-area">
+      <img class="header-logo" src="images/logo.png">
+      <div class="header-menu">
+        <h2 id="headermenu-dropdown">PILOT SHOP</h2>
+        <a href="" id="navigation-active">Home</a>
+        <a href="">Products</a>
+        <a href="">Blog</a>
+        <a href="">Sale</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper">
+    <img src="images/slide1_image.jpg">
+    <div class="swiper-caption">
+      <h2>- A Wide Range -</h2>
+      <h3>Of aviation products and pilot supplies</h3>
+      <button>Shop now!</button>
+    </div>
+  </div>
+
+  <div class="content-area">
+    <div class="showcase">
+      <div class="showcase-block showcase-active">
+        <img src="images/custom_showcase1_img.jpg">
+        <div class="showcase-content">
+          <h3>Hot<br>Headsets</h3>
+          <h4>The best offers</h4>
+          <button>Shop now!</button>
+        </div>
+      </div>
+
+      <div class="showcase-block">
+        <img src="images/custom_showcase2_img.jpg">
+        <div class="showcase-content">
+          <h3>Only<br>the best</h3>
+          <h4>Flying tutorials</h4>
+          <button>Shop now!</button>
+        </div>
+      </div>
+
+      <div class="showcase-block">
+        <img src="images/custom_showcase3_img.jpg">
+        <div class="showcase-content">
+          <h3>Portable<br>GPS</h3>
+          <h4>The highest quality</h4>
+          <button>Shop now!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-products">
+    <div class="content-area">
+      <h2 class="page-heading">Featured Products</h2>
+      <div class="product-container">
+        <script id="product-template" type="text/x-handlebars-template">
+          <div class="product-box">
+              <div class="product-img"><img src={{image}}></div>
+              <div class="product-info">
+                  <h2 class="product-name">{{name}}</h2>
+                  <div class="product-description">{{desc}}</div>
+                  {{#ifSale price originalPrice}}
+                    <div class="product-price">From <span class="sale-price">${{price}}</span> <span class="old-price">${{originalPrice}}</span></div>
+                  {{else}}
+                    <div class="product-price"><span class="sale-price">${{price}}</span></div>
+                  {{/ifSale}}
+              </div>
+          </div>
+      </script>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

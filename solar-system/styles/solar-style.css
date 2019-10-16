@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: black;
+}
+
+svg {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+circle {
+  transform-origin: center;
+}
+
+#sun {
+  fill: yellow;
+}
+
+.orbit {
+  fill: transparent;
+  stroke: #f0ffff55;
+  stroke-width: 1px;
+}
+
+#mercury {
+  fill: #ceccd1;
+  animation: merc 14.46s infinite linear;
+}
+
+#venus {
+  fill: #ddd8d4;
+  animation: venu 36.912s infinite linear;
+}
+
+.earth {
+  transform-origin: center;
+  fill: #8cb1de;
+  animation: urth 60s infinite linear;
+}
+
+#lune {
+  fill: #fcfcfc;
+  animation: lune 4.48s infinite linear;
+}
+
+#mars {
+  fill: #e27b58;
+  animation: mars 112.854s infinite linear;
+}
+
+#jupiter {
+  fill: #90614d;
+  animation: jupi 714s infinite linear;
+}
+
+#saturn {
+  fill: #c5ab6e;
+  animation: satu 1764s infinite linear;
+}
+
+#uranus {
+  fill: #bbe1e4;
+  animation: uran 5022s infinite linear;
+}
+
+#neptune {
+  fill: #3e54e8;
+  animation: nept 9822s infinite linear;
+}
+
+@keyframes merc {
+  from {
+    transform: rotate(0deg) translate(0, 60px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 60px)
+  }
+}
+
+@keyframes venu {
+  from {
+    transform: rotate(0deg) translate(0, 96px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 96px)
+  }
+}
+
+@keyframes urth {
+  from {
+    transform: rotate(0deg) translate(0, 132px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 132px)
+  }
+}
+
+@keyframes lune {
+  from {
+    transform: rotate(0deg) translate(0, 12px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 12px)
+  }
+}
+
+@keyframes mars {
+  from {
+    transform: rotate(0deg) translate(0, 168px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 168px)
+  }
+}
+
+@keyframes jupi {
+  from {
+    transform: rotate(0deg) translate(0, 204px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 204px)
+  }
+}
+
+@keyframes satu {
+  from {
+    transform: rotate(0deg) translate(0, 240px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 240px)
+  }
+}
+
+@keyframes uran {
+  from {
+    transform: rotate(0deg) translate(0, 276px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 276px)
+  }
+}
+
+@keyframes nept {
+  from {
+    transform: rotate(0deg) translate(0, 312px)
+  }
+  to {
+    transform: rotate(-360deg) translate(0, 312px)
+  }
+}

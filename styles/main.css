@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(90deg, #9c2542, #9c2625);
+  color: #dddddd;
+  font-size: 1.6rem;
+}
+
+a {
+  display: block;
+  color: #ffa631;
+}
+
+a:link {
+  color: #ffa631;
+}
+
+a:hover {
+  color: #ffbc64;
+}
+
+.row {
+  padding: 3px;
+}
+
+.col {
+  border: 1px solid #dddddd;
+}

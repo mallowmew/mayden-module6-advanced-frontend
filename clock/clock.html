@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock</title>
+    <link rel="stylesheet" href="styles/clock.css">
+    <script src="clock.js" defer></script>
+  </head>
+  <body>
+    <div class="clock-container">
+      <svg id="under" width="600" height="600">
+        <circle id="face" fill="url(#g1)" r="300" cx="300" cy="300"/>
+        <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+          <stop stop-color="transparent" offset="0%"/>
+          <stop stop-color="transparent" offset="100%"/>
+        </radialGradient>
+      </svg>
+      <svg id="over" width="600" height="600">
+        <line class="line hour quarter" x1="300" y1="0" x2="300" y2="60" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour quarter" x1="300" y1="0" x2="300" y2="60" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour quarter" x1="300" y1="0" x2="300" y2="60" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour quarter" x1="300" y1="0" x2="300" y2="60" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line hour" x1="300" y1="0" x2="300" y2="40" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line class="line minute" x1="300" y1="0" x2="300" y2="4" />
+        <line id="hours" x1="300" y1="100" x2="300" y2="300" />
+        <line id="minutes" x1="300" y1="30" x2="300" y2="300" />
+        <line id="seconds" x1="300" y1="70" x2="300" y2="300" />
+        <circle id="nub" r="3" cx="300" cy="300"/>
+      </svg>
+      <div id="date"><span>Please wait...</span></div>
+    </div>
+  </body>
+</html>

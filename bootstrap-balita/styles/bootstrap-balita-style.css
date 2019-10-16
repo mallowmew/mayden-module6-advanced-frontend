@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: 'Josefin Sans',arial,sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.9;
+    color: #6c757d;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #000000;
+}
+
+header, footer {
+    background: black;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.site-section {
+    padding-bottom: 7em;
+}
+
+.site-logo {
+    font-size: 90px;
+}
+
+header {
+    padding: 10px;
+}
+
+.social a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social a:link {
+    color: #7f7f7f;
+    transition: color 500ms;
+}
+
+.social a:hover {
+    color: #ffffff;
+    transition: color 500ms;
+}
+
+.search-top-form {
+    position: relative;
+}
+
+.search-top input {
+    border: none;
+    border-radius: 4px;
+    padding: 4px 30px 4px 15px;
+    min-width: 300px;
+    background: #212121;
+    line-height: inherit;
+    color: #ffffff;
+}
+
+.search-top .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.navbar {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.carousel-item {
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    top: 50%;
+    left: 5%;
+    bottom: 50%;
+    width: 50%;
+    transform: translate(0, -50%);
+}
+
+.carousel-item h3 {
+    text-align: left;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.carousel-item p {
+    text-align: left;
+    font-size: 1.75rem;
+}
+
+.a-block {
+    padding: 30px;
+    height: 400px;
+    background: gray;
+}
+
+.a-block .text {
+    position: relative;
+    max-width: 100%;
+    font-size: 1.75rem;
+    color: white;
+}
+
+.a-block h3 {
+    color: #ffffff;
+}
+
+.category {
+    border-radius: 4px;
+    background: #007bff;
+    margin-right: 10px;
+    padding: 2px 8px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #ffffff !important;
+}
+
+.date {
+    color: #b3b3b3;
+}
+
+.comments {
+    color: #b3b3b3;
+}
+
+.comments:before {
+    content: "•";
+    padding: 0 0.5em;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+
+.a-block h3 {
+    font-size: 3rem;
+}
+
+#lifestyle-category {
+    font-size: 3.2rem;
+}
+
+.blog-entry img {
+    display: block;
+    max-width: 100%;
+}
+
+.blog-entry .blog-content-body {
+    border: 1px solid #efefef;
+    border-top: none;
+    padding: 20px;
+}
+
+.sidebar {
+    padding-left: 5em;
+}
+
+.sidebar-box {
+    display: block;
+}
+
+.bio {
+    display: block;
+}
+
+.bio-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.site-footer {
+    padding: 5em 0;
+}

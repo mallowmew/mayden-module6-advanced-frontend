@@ -1,0 +1,37 @@
+@import '_variables';
+@import '_mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(90deg, $background-colour, adjust-hue($background-colour, 15deg));
+  color: $primary-colour;
+  font-size: 1.6rem;
+}
+
+a {
+  display: block;
+  color: $link-color;
+}
+
+a:link {
+  color: $link-color;
+}
+
+a:hover {
+  color: lighten($link-color, 10%);
+}
+
+.row {
+  padding: 3px;
+}
+
+.col {
+  border: 1px solid $primary-colour;
+}
